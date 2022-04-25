@@ -1,0 +1,11 @@
+.header {
+    width: 100%;
+    text-align: center;
+    color: white;
+    margin-bottom: 5%;
+}
+
+.header__logo { 
+    width: 80px;
+    border-radius: 50%;
+}

@@ -1,0 +1,50 @@
+.qanda {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+.qanda__container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 40%;
+}
+
+.qanda__list-el {
+    opacity: 0;
+    transition: .3s opacity, .3s visibility;
+    list-style: none;
+    text-align: start;
+    margin-bottom: 30px;
+}
+
+.qanda__list-el_active {
+    opacity: 1;
+    transition: .3s opacity, .3s visibility;
+    list-style: none;
+    text-align: start;
+    margin-bottom: 30px;
+}
+
+.qanda__answer-button {
+    background-image: url("../images/plus.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    transition: .2s;
+    transform: rotate(45deg);
+}
+
+.qanda__answer-button_active {
+    background-image: url("../images/plus.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    transition: .2s;
+}

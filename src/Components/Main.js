@@ -1,13 +1,19 @@
 import "./Main.css";
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { connect } from "../redux/blockchain/blockchainActions";
 import { fetchData } from "../redux/data/dataActions";
 import Description from "./Description";
 import Roadmap from "./Roadmap";
 import Qanda from "./Qanda";
+import Tokenomics from "./Tokenomics";
+import Polygon from "../images/polygon-matic-logo.svg";
+import Opensea from "../images/opensea.svg";
 
 export default function Main() {
+
+    let countDownDate = new Date("May 25, 2022 12:00:00").getTime();
+    let timeLeft = useRef();
 
     const dispatch = useDispatch();
     const blockchain = useSelector((state) => state.blockchain);
@@ -17,6 +23,20 @@ export default function Main() {
     const [succFeedback, setSuccFeedback] = useState("");
     const [claimingNft, setClaimingNft] = useState(false);
     const [mintAmount, setMintAmount] = useState(1);
+
+    const [days, setDays] = useState("");
+    const [hours, setHours] = useState("");
+    const [minutes, setMinutes] = useState("");
+    const [seconds, setSeconds] = useState("");
+
+    function getTime() {
+        let now = new Date().getTime();
+        timeLeft.current = countDownDate - now;
+        setDays(Math.floor(timeLeft.current / (1000 * 60 * 60 * 24)));
+        setHours(Math.floor((timeLeft.current % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)));
+        setMinutes(Math.floor((timeLeft.current % (1000 * 60 * 60)) / (1000 * 60)));
+        setSeconds(Math.floor((timeLeft.current % (1000 * 60)) / 1000));
+    }
 
     const decrementMintAmount = () => {
         let newMintAmount = mintAmount - 1;
@@ -39,7 +59,7 @@ export default function Main() {
         blockchain.smartContract.methods.mint(mintAmount).send({
         from: blockchain.account,
         value: blockchain.web3.utils.toWei(
-            (1 * mintAmount).toString(),
+            (30 * mintAmount).toString(),
             "ether"
         ),
         }).once("error", (err) => {
@@ -47,19 +67,29 @@ export default function Main() {
             setErrFeedback(err.message)
             setClaimingNft(false);
         }).then((receipt) => {
-            setSuccFeedback("IT'S YOURS! CHECK OPENSEA.IO FOR YOUR SEREZHA 001K");
+            setErrFeedback('');
+            setSuccFeedback(`IT'S YOURS! CHECK YOUR SKELETON ON OPENSEA!`);
             setClaimingNft(false);
         });
     }
+
+    useEffect(()=>{
+        const i = setInterval(getTime, 1000);
+        return () => clearInterval(i);
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, []);
 
     useEffect(() => {
         if (blockchain.account !== "" && blockchain.smartContract !== null) {
             dispatch(fetchData(blockchain.account));
         }
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [blockchain.smartContract, dispatch]);
 
-    return (
+    /*return (
         <main className="main">
+            <img className="main__flying-image1" src={Polygon} />
+            <img className="main__flying-image2" src={Opensea} />
             {blockchain.account === "" || blockchain.smartContract === null ? (
                 <div className="">
                     <h2 className="">Connect to be able to mint!</h2>
@@ -69,7 +99,7 @@ export default function Main() {
                             e.preventDefault();
                             dispatch(connect());
                         }}
-                        className="">
+                        className="main__connect-button">
                         Connect metamask
                     </button>
 
@@ -124,8 +154,85 @@ export default function Main() {
             
             <Description />
             <Roadmap />
+            <Tokenomics />
             <Qanda />
 
+        </main>
+    );*/
+
+    return (
+        <main className="main">  
+            {blockchain.account === "" || blockchain.smartContract === null ? (
+                <div className='mint-block'>
+                    {timeLeft.current > 0 ? <p className="mint-block__timer">{`Public mint in ${days}:${hours}:${minutes}:${seconds}`}</p> : ""}
+                    <h2 className="mint-block__subtitle">Connect to be able to mint!</h2>
+                    <button
+                        type="button"
+                        onClick={(e) => {
+                            e.preventDefault();
+                            dispatch(connect());
+                        }}
+                        className="mint-block__button">
+                        Connect metamask
+                    </button>
+
+                    {blockchain.errorMsg !== "" ? (
+                        <p className="mint-block__span mint-block__span_error">
+                            {blockchain.errorMsg}
+                        </p>
+                    ) : null}
+                </div>
+            ) : (
+                <div className='mint-block'>
+                    <h1 className="mint-block__title">Mint your skeleton!</h1>
+                    <p className="mint-block__span">{`${7070 - data.totalSupply} SKELETONS LEFT`}</p>
+                    <p className="mint-block__span">1 Skeleton costs 30 MATIC</p>
+                    <p className='mint-block__span_error'>{errFeedback}</p>
+                    <p className='mint-block__span_success'>{succFeedback}</p>
+                    <div className="mint-block__mint-container">
+                        <button
+                            className="mint-block__dec-button"
+                            disabled={claimingNft ? 1 : 0}
+                            onClick={(e) => {
+                            e.preventDefault();
+                            decrementMintAmount();
+                            }}
+                        >
+                        </button>
+                        <div className="mint-block__mint-button-container">
+                            <button
+                                type="button"
+                                disabled={timeLeft.current > 0 ? 1 : 0}
+                                onClick={(e) => {
+                                    e.preventDefault();
+                                    claimNFTs(mintAmount);
+                                    setErrFeedback('');
+                                    setSuccFeedback('');
+                                }}
+                                className={timeLeft.current > 0 ? "mint-block__button_disabled" : "mint-block__button"}
+                                >
+                                {timeLeft.current > 0 ? "wait nigger" : claimingNft ? "BUSY" : `BUY ${mintAmount}`}
+                            </button>
+                        </div>
+                        <button
+                            className="mint-block__inc-button"
+                            disabled={claimingNft ? 1 : 0}
+                            onClick={(e) => {
+                                e.preventDefault();
+                                incrementMintAmount();
+                            }}
+                        >
+                        </button>
+                    </div>
+                    
+                </div>
+            )}
+            <Description />
+            <Roadmap />
+            <Tokenomics />
+            <Qanda />
+            <img className="main__flying-image1" src={Polygon} />
+            <img className="main__flying-image2" src={Opensea} />
         </main>
     );
 }

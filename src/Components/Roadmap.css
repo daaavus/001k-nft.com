@@ -1,9 +1,18 @@
 .roadmap {
-    margin-top: 5%;
+    margin-top: 10%;
     display: flex;
     flex-direction: column;
     width: 60%;
     align-items: center;
+}
+
+.roadmap__title {
+    margin-bottom: 10%;
+    font-size: 34px;
+    color: rgb(232, 233, 213);
+    font-weight: normal;
+    font-style: normal;
+    font-family: Arial, sans-serif;
 }
 
 .roadmap__info-block {
@@ -17,8 +26,12 @@
 
 .roadmap__text {
     text-align: center;
-    color: white;
     font-size: 22px;
     margin-top: 0;
-    margin-bottom: 145px;
+    margin-bottom: 165px;
+    font-family: Arial, sans-serif;
+    color: rgb(232, 233, 213);
+    font-weight: normal;
+    font-style: normal;
+    text-align: start;
 }

@@ -24,9 +24,9 @@
 .header__social-container {
     display: flex;
     flex-direction: row;
-    margin: auto 10% auto auto;
+    margin: auto 5% auto auto;
     justify-content: space-between;
-    min-width: 5%;
+    min-width: 100px;
 }
 
 .header__social {
@@ -42,7 +42,7 @@
 .navbar {
     display: flex;
     flex-direction: row;
-    width: 50%;
+    width: 55%;
     justify-content: space-between;
     font-family: Arial, sans-serif;
     font-size: 20px;
@@ -84,5 +84,15 @@
 
     .navbar {
         display: none;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .navbar__link {
+        font-size: 18px;
+    }
+
+    .navbar {
+        width: 60%;
     }
 }

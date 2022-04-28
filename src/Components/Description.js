@@ -6,14 +6,15 @@ export default function Description() {
         <div id="description" className="description">
             <h3 className="description__title">О проекте</h3>
             <div className="description__content">
-                <div>
+                <div className="description__video-container">
                     <video className="description__video" preload="auto" no-controls="true" autoPlay loop playsInline muted>
                         <source src={nftShowcase} type="video/mp4"></source>
                     </video>
                 </div>
-                <div>
-                    <p className="description__text">НФТ коллекция от Сережи 001к. Блокчейн Polygon.</p>
-                </div>
+                <p className="description__text">
+                    001K NFT - коллекция Сережи 001K из 1111 уникальных NFT, среди которых затерялись 3 супер редких Себека из драгоценных металлов!
+                    Все NFT в коллекции уникальны и единственны! Мы располагаемся на блокчейне Polygon. 
+                </p>
             </div>
         </div>
     )

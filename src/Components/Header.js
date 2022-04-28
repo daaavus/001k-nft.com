@@ -1,7 +1,6 @@
 import "./Header.css";
 import discordLogo from "../images/discord.svg";
 import openseaLogo from "../images/opensea.svg";
-import { useState } from "react";
 
 export default function Header() {
 
@@ -17,7 +16,7 @@ export default function Header() {
             </nav>
 
             <div className="header__social-container">
-                <a rel="noreferrer noopener" target="_blank" href="https://discord.gg/">
+                <a target="_blank" rel="noreferrer noopener" href="https://discord.gg/">
                     <img className="header__social" alt="discord logo" src={discordLogo}></img>
                 </a>
                 <a rel="noreferrer noopener" target="_blank" href="https://opensea.io/collection/001k">

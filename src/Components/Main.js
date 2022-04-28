@@ -157,8 +157,8 @@ export default function Main() {
             <Roadmap />
             <Tokenomics />
             <Qanda />
-            <img className="main__flying-image1" src={Polygon} />
-            <img className="main__flying-image2" src={Opensea} />
+            <img alt="polygon network" className="main__flying-image1" src={Polygon} />
+            <img alt="opensea.io" className="main__flying-image2" src={Opensea} />
         </main>
     );
 }

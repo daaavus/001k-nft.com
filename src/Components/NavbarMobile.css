@@ -23,6 +23,7 @@
     filter: blur(3px);
     width: 500px;
     height: 500px;
+    z-index: -1;
 }
 
 .navbar-mobile__list {
@@ -65,5 +66,17 @@
 @media screen and (max-width: 800px) {
     .navbar-mobile {
         display: flex;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .navbar-mobile__list {
+        margin: 30% auto 10% auto;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .navbar-mobile__list {
+        margin: 45% auto 10% auto;
     }
 }

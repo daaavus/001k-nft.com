@@ -5,7 +5,7 @@ export default function Tokenomics() {
     return (
         <div id="tokenomics" className="tokenomics">
             <h3 className="tokenomics__title">Токеномика</h3>
-            <img className="tokenomics__graph" src={aa}></img>
+            <img alt="tokenomics round graph" className="tokenomics__graph" src={aa}></img>
         </div>
     )
 }

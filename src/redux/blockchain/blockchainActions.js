@@ -1,6 +1,6 @@
 // constants
 import Web3 from "web3";
-import SmartContract from "../../contracts/SmartContract.json";
+import SmartContract from "../../Abi/SmartContract.json";
 // log
 import { fetchData } from "../data/dataActions";
 
@@ -44,11 +44,12 @@ export const connect = () => {
           method: "net_version",
         });
         //const NetworkData = await SmartContract.networks[networkId];
-        if (networkId === 80001) {
+        // eslint-disable-next-line
+        if (networkId == 137) {
           const SmartContractObj = new web3.eth.Contract(
             SmartContract.abi,
             //NetworkData.address
-            "0xE7aBc9c8C333fC8147d578bd5C5fc3c1cd2E6A2D"
+            ""
           );
           dispatch(
             connectSuccess({
@@ -66,13 +67,13 @@ export const connect = () => {
           });
           // Add listeners end
         } else {
-          dispatch(connectFailed("Change network to Rinkeby testnet."));
+          dispatch(connectFailed("Change network to Polygon."));
         }
       } catch (err) {
         dispatch(connectFailed("Something went wrong."));
       }
     } else {
-      dispatch(connectFailed("Install Metamask."));
+      dispatch(connectFailed("Use desktop Metamask."));
     }
   };
 };

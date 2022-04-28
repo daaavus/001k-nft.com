@@ -1,17 +1,19 @@
 import "./Header.css";
 import discordLogo from "../images/discord.svg";
 import openseaLogo from "../images/opensea.svg";
+import { useState } from "react";
 
 export default function Header() {
+
     return (
         <header className="header" id="header">
-            <a href="#" className="header__logo">001K</a>
+            <p className="header__logo">001K</p>
 
             <nav className="navbar">
-                <a className="navbar__link" href="#description">Description</a>
-                <a className="navbar__link" href="#roadmap">Roadmap</a>
-                <a className="navbar__link" href="#tokenomics">Tokenomics</a>
-                <a className="navbar__link" href="#qanda">Q&A</a>
+                <a className="navbar__link" href="#description">О проекте</a>
+                <a className="navbar__link" href="#roadmap">Карта</a>
+                <a className="navbar__link" href="#tokenomics">Токеномика</a>
+                <a className="navbar__link" href="#qanda">Вопросы и ответы</a>
             </nav>
 
             <div className="header__social-container">

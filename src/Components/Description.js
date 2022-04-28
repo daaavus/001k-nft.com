@@ -4,7 +4,7 @@ import nftShowcase from "../images/nft-showcase.mp4";
 export default function Description() {
     return (
         <div id="description" className="description">
-            <h3 className="description__title">Description</h3>
+            <h3 className="description__title">О проекте</h3>
             <div className="description__content">
                 <div>
                     <video className="description__video" preload="auto" no-controls="true" autoPlay loop playsInline muted>

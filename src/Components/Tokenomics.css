@@ -1,5 +1,7 @@
 .tokenomics { 
-    
+    display: flex;
+    flex-direction: column;
+    width: 60%;
 }
 
 .tokenomics__title {
@@ -8,4 +10,9 @@
     font-weight: normal;
     font-style: normal;
     font-family: Arial, sans-serif;
+}
+
+.tokenomics__graph {
+    width: 100%;
+    height: fit-content;
 }

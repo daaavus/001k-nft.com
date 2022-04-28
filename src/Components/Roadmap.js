@@ -4,7 +4,7 @@ import roadmapImage from "../images/roadmap.PNG";
 export default function Roadmap() {
     return (
         <div id="roadmap" className="roadmap">
-            <h3 className="roadmap__title">Roadmap</h3>
+            <h3 className="roadmap__title">Карта проекта</h3>
             <div className="roadmap__info-block">
                 <div>
                     <img className="roadmap__image" src={roadmapImage} />

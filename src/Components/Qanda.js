@@ -10,47 +10,57 @@ export default function Qanda() {
     const [answerVisible5, setAnswerVisible5] = useState(false);
 
     return (
-        <div className="qanda">
-            <h3 className="qanda__title">Questions</h3>
+        <div id="qanda" className="qanda">
+            <h3 className="qanda__title">Вопросы и ответы</h3>
             <ul className="qanda__list">
                 <div className="qanda__container">
                     <div className="qanda__question-container">
-                        <p className="qanda__question-text">When is public sale and whitelist presale?</p>
+                        <p className="qanda__question-text">Когда стартует пресейл и публичный сейл NFT?</p>
                         <div className={answerVisible1 ? "qanda__answer-button" : "qanda__answer-button_active"} onClick={() => {answerVisible1 ? setAnswerVisible1(false) : setAnswerVisible1(true)}}></div>
                     </div>
-                    <li className={answerVisible1 ? 'qanda__list-el_active' : 'qanda__list-el'}>Public SOFB collection drop will be on the 1st of may 7pm est! Whitelist presale - 28th april 5pm est!</li>
+                    <li className={answerVisible1 ? 'qanda__list-el_active' : 'qanda__list-el'}>Пресейл стартует 25 мая в 12:00 по Киевскому времени. Публичные продажи начнутся 27 мая в 12:00.</li>
                 </div>
                 
                 <div className="qanda__container">
                     <div className="qanda__question-container">
-                        <p className="qanda__question-text">What will be mint cost and gas fee?</p>
+                        <p className="qanda__question-text">Какая цена NFT?</p>
                         <div className={answerVisible2 ? "qanda__answer-button" : "qanda__answer-button_active"} onClick={() => {answerVisible2 ? setAnswerVisible2(false) : setAnswerVisible2(true)}}></div>
                     </div>
-                    <li className={answerVisible2 ? 'qanda__list-el_active' : 'qanda__list-el'}>1 NFT will cost 30 MATIC and gas fees are going to almost 0 because we are on Polygon blockchain!</li>
+                    <li className={answerVisible2 ? 'qanda__list-el_active' : 'qanda__list-el'}>
+                        За 1 NFT установлена цена в 140 MATIC. Комиссия за газ почти нулевая, так как мы на блокчейне Polygon!
+                    </li>
                 </div>
 
                 <div className="qanda__container">
                     <div className="qanda__question-container">
-                        <p className="qanda__question-text">When main skeletons images will be unlocked?</p>
-                        <div className={answerVisible3 ? "qanda__answer-button" : "qanda__answer-button_active"} onClick={() => {answerVisible3 ? setAnswerVisible3(false) : setAnswerVisible3(true)}}></div>
-                    </div>
-                    <li className={answerVisible3 ? 'qanda__list-el_active' : 'qanda__list-el'}>Once all Skeletons will be minted or after 72 hours from public sale!</li>
-                </div>
-
-                <div className="qanda__container">
-                    <div className="qanda__question-container">
-                        <p className="qanda__question-text">Will the price rise after public sale?</p>
-                        <div className={answerVisible4 ? "qanda__answer-button" : "qanda__answer-button_active"} onClick={() => {answerVisible4 ? setAnswerVisible4(false) : setAnswerVisible4(true)}}></div>
-                    </div>
-                    <li className={answerVisible4 ? 'qanda__list-el_active' : 'qanda__list-el'}>Of course it will! #SOFBToTheMoon</li>
-                </div>
-
-                <div className="qanda__container">
-                    <div className="qanda__question-container">
-                        <p className="qanda__question-text">How many SOFB will enter the blockchain?</p>
+                        <p className="qanda__question-text">Сколько всего NFT в коллекции?</p>
                         <div className={answerVisible5 ? "qanda__answer-button" : "qanda__answer-button_active"} onClick={() => {answerVisible5 ? setAnswerVisible5(false) : setAnswerVisible5(true)}}></div>
                     </div>
-                    <li className={answerVisible5 ? 'qanda__list-el_active' : 'qanda__list-el'}>There are 7070 hand-drawn unique and randomly generated NFTs!</li>
+                    <li className={answerVisible5 ? 'qanda__list-el_active' : 'qanda__list-el'}>
+                        1111 уникальных NFT!
+                    </li>
+                </div>
+
+                <div className="qanda__container">
+                    <div className="qanda__question-container">
+                        <p className="qanda__question-text">Когда будут разблокированы изображения NFT?</p>
+                        <div className={answerVisible3 ? "qanda__answer-button" : "qanda__answer-button_active"} onClick={() => {answerVisible3 ? setAnswerVisible3(false) : setAnswerVisible3(true)}}></div>
+                    </div>
+                    <li className={answerVisible3 ? 'qanda__list-el_active' : 'qanda__list-el'}>
+                        Функция раскрытия исполнится как только все 1111 NFT будут сминчены!
+                    </li>
+                </div>
+
+                <div className="qanda__container">
+                    <div className="qanda__question-container">
+                        <p className="qanda__question-text">Какой потенциал у коллекции?</p>
+                        <div className={answerVisible4 ? "qanda__answer-button" : "qanda__answer-button_active"} onClick={() => {answerVisible4 ? setAnswerVisible4(false) : setAnswerVisible4(true)}}></div>
+                    </div>
+                    <li className={answerVisible4 ? 'qanda__list-el_active' : 'qanda__list-el'}>
+                        Особо редкие NFT из нашей коллекции будут нести в себе множество крутых привилегий!
+                        Так, например у 3 счастливчиков будет шанс лично встретиться с Сережей 001K или перепродать NFT, ведь право на встречу сохраняется после перепродажи!
+                        Также с приобритением 001K NFT вы становитесь частью огромного и прогрессивного комьюнити!
+                    </li>
                 </div>
             </ul>
         </div>

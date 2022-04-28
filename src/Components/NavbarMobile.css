@@ -1,0 +1,69 @@
+@keyframes spin {
+    from {transform:rotate(0deg);}
+    to {transform:rotate(360deg);}
+}
+
+.navbar-mobile {
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.navbar-mobile__list-container {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+}
+
+.navbar-mobile__flying-image {
+    position: absolute;
+    top: 10%;
+    right: 7%;
+    animation: spin 120s linear 0s infinite;
+    filter: blur(3px);
+    width: 500px;
+    height: 500px;
+}
+
+.navbar-mobile__list {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    font-size: 20px;
+    font-family: Arial, sans-serif;
+    color: rgb(232, 233, 213);
+    margin: 20% auto 10% auto;
+    width: 80%;
+    height: 60%;
+    justify-content: space-between;
+}
+
+.navbar-mobile__list-el-text {
+    text-decoration: none;
+    color: rgb(232, 233, 213);
+    font-family: Arial, sans-serif;
+    font-size: 22px;
+    transition: .3s;
+    font-weight: 600;
+}
+
+.navbar-mobile__list-el-text:hover {
+    color: rgb(78, 81, 250);
+    transition: .3s;
+}
+
+.navbar-mobile__button {
+    width: 1em;
+    height: 1em;
+    cursor: pointer;
+    z-index: 9999;
+    position: fixed;
+    top: 3%;
+    right: 5%;
+}
+
+@media screen and (max-width: 800px) {
+    .navbar-mobile {
+        display: flex;
+    }
+}

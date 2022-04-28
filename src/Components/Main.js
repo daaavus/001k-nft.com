@@ -86,86 +86,12 @@ export default function Main() {
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [blockchain.smartContract, dispatch]);
 
-    /*return (
-        <main className="main">
-            <img className="main__flying-image1" src={Polygon} />
-            <img className="main__flying-image2" src={Opensea} />
-            {blockchain.account === "" || blockchain.smartContract === null ? (
-                <div className="">
-                    <h2 className="">Connect to be able to mint!</h2>
-                    <button
-                        type="button"
-                        onClick={(e) => {
-                            e.preventDefault();
-                            dispatch(connect());
-                        }}
-                        className="main__connect-button">
-                        Connect metamask
-                    </button>
-
-                    {blockchain.errorMsg !== "" ? (
-                        <p className="">
-                            {blockchain.errorMsg}
-                        </p>
-                    ) : null}
-                </div>
-            ) : (
-                <div>
-                    <h1>Mint Serezha!</h1>
-                    <p>{`${3333 - data.totalSupply} Serega's LEFT`}</p>
-                    <p>Cost</p>
-                    <p>{errFeedback}</p>
-                    <p>{succFeedback}</p>
-                    <div>
-                        <button
-                            className=""
-                            disabled={claimingNft ? 1 : 0}
-                            onClick={(e) => {
-                            e.preventDefault();
-                            decrementMintAmount();
-                            }}
-                        >
-                        </button>
-                        <div>
-                            <button
-                                type="button"
-                                disabled={claimingNft ? 1 : 0}
-                                onClick={(e) => {
-                                    e.preventDefault();
-                                    claimNFTs(mintAmount);
-                                }}       
-                                className="">
-                                {claimingNft ? "BUSY" : `BUY ${mintAmount}`}
-                            </button>
-                        </div>
-                        <button
-                            className=""
-                            disabled={claimingNft ? 1 : 0}
-                            onClick={(e) => {
-                                e.preventDefault();
-                                incrementMintAmount();
-                            }}
-                        >
-                        </button>
-                    </div>
-                    
-                </div>
-            )}
-            
-            <Description />
-            <Roadmap />
-            <Tokenomics />
-            <Qanda />
-
-        </main>
-    );*/
-
     return (
         <main className="main">  
             {blockchain.account === "" || blockchain.smartContract === null ? (
                 <div className='mint-block'>
-                    {timeLeft.current > 0 ? <p className="mint-block__timer">{`Public mint in ${days}:${hours}:${minutes}:${seconds}`}</p> : ""}
-                    <h2 className="mint-block__subtitle">Connect to be able to mint!</h2>
+                    {timeLeft.current > 0 ? <p className="mint-block__timer">{`Публичный дроп через ${days}:${hours}:${minutes}:${seconds}`}</p> : ""}
+                    <h2 className="mint-block__subtitle">Подключите MetaMask, чтобы приобрести NFT!</h2>
                     <button
                         type="button"
                         onClick={(e) => {
@@ -173,7 +99,7 @@ export default function Main() {
                             dispatch(connect());
                         }}
                         className="mint-block__button">
-                        Connect metamask
+                        Подключите MetaMask
                     </button>
 
                     {blockchain.errorMsg !== "" ? (
@@ -184,9 +110,9 @@ export default function Main() {
                 </div>
             ) : (
                 <div className='mint-block'>
-                    <h1 className="mint-block__title">Mint your skeleton!</h1>
-                    <p className="mint-block__span">{`${7070 - data.totalSupply} SKELETONS LEFT`}</p>
-                    <p className="mint-block__span">1 Skeleton costs 30 MATIC</p>
+                    <h1 className="mint-block__title">Заминтите ваш NFT!</h1>
+                    <p className="mint-block__span">{`${1111 - data.totalSupply} NFT осталось`}</p>
+                    <p className="mint-block__span">1 NFT стоит 140 MATIC</p>
                     <p className='mint-block__span_error'>{errFeedback}</p>
                     <p className='mint-block__span_success'>{succFeedback}</p>
                     <div className="mint-block__mint-container">
@@ -211,7 +137,7 @@ export default function Main() {
                                 }}
                                 className={timeLeft.current > 0 ? "mint-block__button_disabled" : "mint-block__button"}
                                 >
-                                {timeLeft.current > 0 ? "wait nigger" : claimingNft ? "BUSY" : `BUY ${mintAmount}`}
+                                {timeLeft.current > 0 ? "ДОЖДИТЕСЬ ДРОПА!" : claimingNft ? "ЗАГРУЗКА" : `КУПИТЬ ${mintAmount}`}
                             </button>
                         </div>
                         <button

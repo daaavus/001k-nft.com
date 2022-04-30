@@ -3,7 +3,7 @@ import React, { useState } from "react";
 
 export default function Qanda() {
 
-    const [answerVisible1, setAnswerVisible1] = useState(false);
+    const [answerVisible1, setAnswerVisible1] = useState(true);
     const [answerVisible2, setAnswerVisible2] = useState(false);
     const [answerVisible3, setAnswerVisible3] = useState(false);
     const [answerVisible4, setAnswerVisible4] = useState(false);

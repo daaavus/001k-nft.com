@@ -1,0 +1,141 @@
+.token { 
+    margin: 10% auto 0 auto;
+    width: 70%;
+    border: 2px solid lightblue;
+    border-radius: 26px;
+}
+
+.token__address-container {
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    width: 92%;
+    border-bottom: 2px solid lightblue;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.token__network-image {
+    width: 2em;
+    height: 2em;
+}
+
+.token__address { 
+    font-size: 28px;
+    text-decoration: none;
+    font-weight: 700;
+    color: lightblue;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.token__logo { 
+    border: 2px solid rgb(232, 233, 213);
+    font-size: 20px;
+    text-decoration: none;
+    color: rgb(232, 233, 213);
+    width: 60px;
+    font-weight: 700;
+}
+
+.token__copy-text {
+    color: lightblue;
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.token__description {
+    margin: auto;
+    width: 92%;
+}
+
+.token__description-text {
+    font-size: 24px;
+    text-decoration: none;
+    font-weight: 700;
+    color: lightblue;
+}
+
+@media screen and (max-width: 1600px) {
+    .token__address {
+        font-size: 24px;
+    }
+
+    .token__description-text {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .token__address {
+        font-size: 20px;
+    }
+
+    .token__description-text {
+        font-size: 18px;
+    }
+
+    .token__copy-text {
+        font-size: 18px;
+        font-weight: 700;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .token {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .token__address {
+        font-size: 17px;
+    }
+
+    .token__description-text {
+        font-size: 16px;
+    }
+
+    .token__copy-text {
+        font-size: 16px;
+        font-weight: 700;
+    }
+
+    .token__logo {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .token {
+        width: 85%;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .token {
+        text-align: left;
+    }
+
+    .token__address {
+        font-size: 17px;
+        margin: 16px auto 16px 0;
+    }
+
+    .token__description-text {
+        font-size: 16px;
+    }
+
+    .token__copy-text {
+        display: none;
+    }
+
+    .token__network-image {
+        display: none;
+    }
+}

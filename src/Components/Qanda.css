@@ -27,7 +27,8 @@
     font-size: 34px;
     color: rgb(232, 233, 213);
     font-weight: normal;
-    font-style: normal; 
+    font-style: normal;
+    font-weight: 700;
 }
 
 .qanda__question-container {
@@ -60,11 +61,11 @@
     transition: .3s opacity, .3s visibility;
     list-style: none;
     text-align: start;
-    color: rgb(232, 233, 213);
+    color: rgb(78, 81, 250);
     font-family: Arial, sans-serif;
     font-size: 20px;
     width: 100%;
-    line-height: 30px;
+    line-height: 24px;
     transition: .3s;
 }
 

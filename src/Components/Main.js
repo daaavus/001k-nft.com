@@ -9,6 +9,7 @@ import Qanda from "./Qanda";
 import Tokenomics from "./Tokenomics";
 import Polygon from "../images/polygon-matic-logo.svg";
 import Opensea from "../images/opensea.svg";
+import Token from "./Token/Token";
 
 export default function Main() {
 
@@ -154,6 +155,7 @@ export default function Main() {
                 </div>
             )}
             <Description />
+            <Token />
             <Roadmap />
             <Tokenomics />
             <Qanda />

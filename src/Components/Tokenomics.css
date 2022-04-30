@@ -10,6 +10,7 @@
     font-weight: normal;
     font-style: normal;
     font-family: Arial, sans-serif;
+    font-weight: 700;
 }
 
 .tokenomics__graph {
@@ -26,5 +27,6 @@
 @media screen and (max-width: 800px) {
     .tokenomics {
         width: 85%;
+        text-align: left;
     }
 }

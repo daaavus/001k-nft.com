@@ -2,10 +2,10 @@ import "./Token.css";
 
 export default function Token() {
     return (
-        <div className="token">
+        <div id="token" className="token">
             <div className="token__address-container">
                 <p className="token__logo">001K</p>
-                <a className="token__address" target="_blank" noopener noreferrer
+                <a className="token__address" target="_blank" rel="noopener noreferrer"
                     href="https://polygonscan.com/address/0x1FA78Ddb7a7Cd876D164E16772a9143d36BF0bD5">
                     0x1FA78Ddb7a7Cd876D164E16772a9143d36BF0bD5
                 </a>

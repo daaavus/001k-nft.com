@@ -10,6 +10,7 @@ export default function Header() {
 
             <nav className="navbar">
                 <a className="navbar__link" href="#description">О проекте</a>
+                <a className="navbar__link" href="#token">Смарт контракт</a>
                 <a className="navbar__link" href="#roadmap">Карта</a>
                 <a className="navbar__link" href="#tokenomics">Токеномика</a>
                 <a className="navbar__link" href="#qanda">Вопросы и ответы</a>

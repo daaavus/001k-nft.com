@@ -22,6 +22,9 @@ export default function NavbarMobile() {
                         <a className="navbar-mobile__list-el-text" href="#description">О проекте</a>
                     </li>
                     <li onClick={() => {!list ? setList(true) : setList(false)}} style={!list ? {display: "none"} : {display: "inline"}} className="navbar-mobile__list-el">
+                        <a className="navbar-mobile__list-el-text" href="#token">Смарт контракт</a>
+                    </li>
+                    <li onClick={() => {!list ? setList(true) : setList(false)}} style={!list ? {display: "none"} : {display: "inline"}} className="navbar-mobile__list-el">
                         <a className="navbar-mobile__list-el-text" href="#roadmap">Карта</a>
                     </li>
                     <li onClick={() => {!list ? setList(true) : setList(false)}} style={!list ? {display: "none"} : {display: "inline"}} className="navbar-mobile__list-el">

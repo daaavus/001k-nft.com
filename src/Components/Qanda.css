@@ -52,7 +52,7 @@
     font-size: 20px;
     width: 100%;
     line-height: 0px;
-    transition: .3s;
+    transition: .15s;
 }
 
 .qanda__list-el_active {
@@ -66,7 +66,7 @@
     font-size: 20px;
     width: 100%;
     line-height: 24px;
-    transition: .3s;
+    transition: .15s;
 }
 
 .qanda__question-text {

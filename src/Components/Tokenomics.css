@@ -13,9 +13,9 @@
     font-weight: 700;
 }
 
-.tokenomics__graph {
+.tokenomics__chart {
     width: 100%;
-    height: fit-content;
+    min-height: 500px;
 }
 
 @media screen and (max-width: 1200px) {

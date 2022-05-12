@@ -60,3 +60,23 @@
     font-size: 24px;
     color: rgba(232, 233, 213, 0.7);
 }
+
+@media screen and (max-width: 750px) {
+    .footer {
+        flex-direction: column;
+    }
+
+    .footer__logo-container {
+        margin: 40px auto 40px auto;
+    }
+
+    .footer__links-container {
+        width: 85%;
+        margin: auto auto 60px auto;
+        justify-content: space-between;
+    }
+
+    .footer__links:nth-of-type(1) {
+        margin-right: auto;
+    }
+}

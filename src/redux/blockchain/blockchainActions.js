@@ -49,7 +49,7 @@ export const connect = () => {
           const SmartContractObj = new web3.eth.Contract(
             SmartContract.abi,
             //NetworkData.address
-            ""
+            "0xbD1202933cF7092D83465335b92842a2f37c64b5"
           );
           dispatch(
             connectSuccess({
@@ -73,7 +73,7 @@ export const connect = () => {
         dispatch(connectFailed("Something went wrong."));
       }
     } else {
-      dispatch(connectFailed("Use desktop Metamask."));
+      dispatch(connectFailed("Use MetaMask extension."));
     }
   };
 };

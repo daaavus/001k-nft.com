@@ -13,7 +13,7 @@ import Token from "./Token/Token";
 
 export default function Main() {
 
-    let countDownDate = new Date("May 25, 2022 12:00:00").getTime();
+    let countDownDate = new Date("July 9, 2022 12:00:00").getTime();
     let timeLeft = useRef();
 
     const dispatch = useDispatch();
@@ -60,7 +60,7 @@ export default function Main() {
         blockchain.smartContract.methods.mint(mintAmount).send({
         from: blockchain.account,
         value: blockchain.web3.utils.toWei(
-            (30 * mintAmount).toString(),
+            (220 * mintAmount).toString(),
             "ether"
         ),
         }).once("error", (err) => {
@@ -69,7 +69,7 @@ export default function Main() {
             setClaimingNft(false);
         }).then((receipt) => {
             setErrFeedback('');
-            setSuccFeedback(`IT'S YOURS! CHECK YOUR SKELETON ON OPENSEA!`);
+            setSuccFeedback(`БАЛДЕЖ! NFT УЖЕ НА ТВОЕМ КОШЕЛЬКЕ! ПРОВЕРЬ OPENSEA.`);
             setClaimingNft(false);
         });
     }
@@ -91,7 +91,7 @@ export default function Main() {
         <main className="main">  
             {blockchain.account === "" || blockchain.smartContract === null ? (
                 <div className='mint-block'>
-                    {timeLeft.current > 0 ? <p className="mint-block__timer">{`Публичный дроп через ${days}:${hours}:${minutes}:${seconds}`}</p> : ""}
+                    {timeLeft.current > 0 ? <p className="mint-block__timer">{`Скоро вы узнаете дату дропа!`}</p> : ""}
                     <h2 className="mint-block__subtitle">Подключите MetaMask, чтобы приобрести NFT!</h2>
                     <button
                         type="button"
@@ -112,8 +112,8 @@ export default function Main() {
             ) : (
                 <div className='mint-block'>
                     <h1 className="mint-block__title">Заминтите ваш NFT!</h1>
-                    <p className="mint-block__span">{`${1111 - data.totalSupply} NFT осталось`}</p>
-                    <p className="mint-block__span">1 NFT стоит 140 MATIC</p>
+                    <p className="mint-block__span">{`${2222 - data.totalSupply} NFT осталось`}</p>
+                    <p className="mint-block__span">1 NFT стоит 160$ в MATIC</p>
                     <p className='mint-block__span_error'>{errFeedback}</p>
                     <p className='mint-block__span_success'>{succFeedback}</p>
                     <div className="mint-block__mint-container">

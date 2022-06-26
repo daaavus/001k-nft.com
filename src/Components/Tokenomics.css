@@ -15,7 +15,7 @@
 
 .tokenomics__chart {
     width: 100%;
-    min-height: 500px;
+    min-height: 630px;
 }
 
 @media screen and (max-width: 1200px) {

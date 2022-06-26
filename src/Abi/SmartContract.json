@@ -754,6 +754,6 @@
       ],
       "stateMutability": "view",
       "type": "function"
-    }    
+    }
   ]
 }

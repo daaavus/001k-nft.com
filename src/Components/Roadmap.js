@@ -17,12 +17,57 @@ export default function Roadmap() {
                 <div>
                     <img alt="roadmap" className="roadmap__image" src={roadmapImage} />
                 </div>
-                <div style={({display: "flex", flexDirection: "column", justifyContent: "space-between"})}>
-                    <p className="roadmap__text">Пока время официального релиза коллекции не наступило, у вас есть возможность получить место в white list'е прокта, чтобы стать обладателем желанной НФТ от Сережи 001к со 100% вероятностью! Общайтесь в нашем <a rel="noreferrer noopener" href="https://discord.gg/">discord</a> сообществе, смотрите <a href="">истории</a> Сережи и захватывайте места в white list'е, пока они еще есть!</p>
-                    <p className="roadmap__text">25 мая НФТ от Сережи 001к попадут на блокчейн Polygon, и в 12:00 по Киевскому времени, ровно за 48 часов до официального релиза, будет открыта возможность минта для тех счастливчиков, кому досталось место в white list'е проекта.</p>
-                    <p className="roadmap__text">27 мая в 12:00 по Киевскому времени откроется возможность минта НФТ! Пока все 1111 НФТ не найдут своих владельцев, никто не узнает, какой именно Сережа оказался в крипто-кошельке, а, может, вы заполучили <span style={({color: "gold"})}>золотого</span> Себека.</p>
-                    <p className="roadmap__text">Продажа коллекции завершена! Все 1111 НФТ куплены и разбросаны по просторам <a style={({color: "lightblue", textDecoration: "none"})} rel="noreferrer noopener" href="https://opensea.io">Opensea</a>. Теперь произойдет reveal ваших НФТ и вы узнаете, какая именно досталась вам!</p>
-                    <p className="roadmap__text">Время получать призы! Поздравляем всех обладателей 001K NFT, теперь вы можете воспользоваться вашими призами, или перепродать NFT вместе с привилегиями токена. Для Перепродажи или обмена вашего NFT рекомендуем воспользоваться специальными каналами в нашем <a rel="noreferrer noopener" href="https://discord.gg/">discord</a> сообществе</p>
+                <div style={({
+                        display: "flex", flexDirection: "column", justifyContent: "space-between"
+                    })}>
+                    <p className="roadmap__text">
+                        Пока время официального релиза коллекции не наступило, 
+                        у вас есть возможность получить место в whitelist'е 
+                        проекта, чтобы стать обладателем желанной NFT от Сережи 
+                        001к со 100% вероятностью! Общайтесь в нашем <a target="_blank" style={({textDecoration: "none", color: "#5865F2"})} rel="noreferrer noopener" href="https://discord.gg/v6Bputsk2Z">
+                            discord
+                        </a> сообществе, смотрите истории Сережи и 
+                        захватывайте места в white list'е, пока они еще есть!
+                    </p>
+                    <p className="roadmap__text">
+                        TBA... NFT от Сережи 001к попадут на блокчейн Polygon, 
+                        и в TBA... по Киевскому времени, ровно за 48 часов до 
+                        официального релиза, будет открыта возможность минта для 
+                        тех счастливчиков, кому досталось место в whitelist'е проекта.
+                    </p>
+                    <p className="roadmap__text">
+                        TBA... по Киевскому времени откроется возможность минта 
+                        NFT! Пока все 2222 NFT не найдут своих владельцев, никто 
+                        не узнает, какой именно Сережа оказался в крипто-кошельке, 
+                        а, может, вы заполучили <span style={({color: "gold"})}>
+                            золотого
+                        </span> Себека.
+                    </p>
+                    <p className="roadmap__text">
+                        Продажа коллекции завершена! Все 2222 NFT куплены и 
+                        разбросаны по просторам <a
+                            target="_blank" 
+                            style={({color: "lightblue", textDecoration: "none"})} 
+                            rel="noreferrer noopener" 
+                            href="https://opensea.io/collection/001k-nft">
+                            Opensea
+                        </a>. Теперь произойдет reveal 
+                        ваших NFT и вы узнаете, какая 
+                        именно досталась вам!
+                    </p>
+                    <p className="roadmap__text">
+                        Время получать призы! Поздравляем всех обладателей 
+                        001K NFT, теперь вы можете воспользоваться вашими 
+                        призами, или перепродать NFT вместе с привилегиями 
+                        токена. Для Перепродажи или обмена вашего NFT 
+                        рекомендуем воспользоваться специальными каналами 
+                        в нашем <a 
+                            style={({textDecoration: "none", color: "#5865F2"})} 
+                            target="_blank" rel="noreferrer noopener" 
+                            href="https://discord.gg/v6Bputsk2Z">
+                            discord
+                        </a> сообществе
+                    </p>
                 </div>
             </div>
             <div className="roadmap__mobile">
@@ -38,9 +83,9 @@ export default function Roadmap() {
                     <div>
                         <p className={quartalVisible1 ? "roadmap__mobile-text" : "roadmap__mobile-text _disabled"}>
                             Пока время официального релиза коллекции не наступило,
-                            у вас есть возможность получить место в white list'е проекта, чтобы стать обладателем желанной НФТ от Сережи 001к со 100% вероятностью!
-                            Общайтесь в нашем <a rel="noreferrer noopener" href="https://discord.gg/">discord </a>
-                            сообществе, смотрите <a href="">истории</a> Сережи и захватывайте места в white list'е,
+                            у вас есть возможность получить место в whitelist'е проекта, чтобы стать обладателем желанной NFT от Сережи 001к со 100% вероятностью!
+                            Общайтесь в нашем <a style={({textDecoration: "none", color: "#5865F2"})}  target="_blank" rel="noreferrer noopener" href="https://discord.gg/v6Bputsk2Z">discord </a>
+                            сообществе, смотрите истории Сережи и захватывайте места в whitelist'е,
                             пока они еще есть!
                         </p>
                     </div>
@@ -56,9 +101,9 @@ export default function Roadmap() {
                     </div>
                     <div>
                         <p className={quartalVisible2 ? "roadmap__mobile-text" : "roadmap__mobile-text _disabled"}>
-                            25 мая НФТ от Сережи 001к попадут на блокчейн Polygon, и в 12:00 по Киевскому времени,
+                            TBA... NFT от Сережи 001к попадут на блокчейн Polygon, и в TBA... по Киевскому времени,
                             ровно за 48 часов до официального релиза, будет открыта возможность минта для тех
-                            счастливчиков, кому досталось место в white list'е проекта.
+                            счастливчиков, кому досталось место в whitelist'е проекта.
                         </p>
                     </div>
                 </div>
@@ -73,10 +118,9 @@ export default function Roadmap() {
                     </div>
                     <div>
                         <p className={quartalVisible3 ? "roadmap__mobile-text" : "roadmap__mobile-text _disabled"}>
-                            27 мая в 12:00 по Киевскому времени откроется возможность минта НФТ!
-                            Пока все 1111 НФТ не найдут своих владельцев, никто не узнает, какой именно
-                            Сережа оказался в крипто-кошельке, а, может, вы заполучили 
-                            <span style={({color: "gold"})}>золотого</span> Себека.
+                            TBA... по Киевскому времени откроется возможность минта NFT!
+                            Пока все 2222 NFT не найдут своих владельцев, никто не узнает, какой именно
+                            Сережа оказался в крипто-кошельке, а, может, вы заполучили <span style={({color: "gold"})}>золотого</span> Себека.
                         </p>
                     </div>
                 </div>
@@ -91,10 +135,10 @@ export default function Roadmap() {
                     </div>
                     <div>
                         <p className={quartalVisible4 ? "roadmap__mobile-text" : "roadmap__mobile-text _disabled"}>
-                            Продажа коллекции завершена! Все 1111 НФТ куплены и разбросаны по
-                            просторам <a style={({color: "lightblue", textDecoration: "none"})} 
-                            rel="noreferrer noopener" href="https://opensea.io">Opensea</a>. 
-                            Теперь произойдет reveal ваших НФТ и вы узнаете, какая именно досталась вам!
+                            Продажа коллекции завершена! Все 2222 NFT куплены и разбросаны по
+                            просторам <a target="_blank" style={({color: "lightblue", textDecoration: "none"})} 
+                            rel="noreferrer noopener" href="https://opensea.io/collection/001k-nft">Opensea</a>. 
+                            Теперь произойдет reveal ваших NFT и вы узнаете, какая именно досталась вам!
                         </p>
                     </div>
                 </div>
@@ -110,10 +154,9 @@ export default function Roadmap() {
                     <div>
                         <p className={quartalVisible5 ? "roadmap__mobile-text" : "roadmap__mobile-text _disabled"}>
                             Время получать призы! Поздравляем всех обладателей 001K NFT, теперь 
-                            вы можете воспользоваться вашими призами, или перепродать NFT 
-                            вместе с привилегиями токена. Для Перепродажи или обмена вашего 
-                            NFT рекомендуем воспользоваться специальными каналами в нашем 
-                            <a rel="noreferrer noopener" href="https://discord.gg/">discord</a> сообществе
+                            вы можете воспользоваться вашими призами или перепродать NFT 
+                            вместе с привилегиями токена. Для перепродажи или обмена вашего 
+                            NFT рекомендуем воспользоваться специальными каналами в нашем  <a style={({textDecoration: "none", color: "#5865F2"})}  target="_blank" rel="noreferrer noopener" href="https://discord.gg/v6Bputsk2Z">discord </a> сообществе.
                         </p>
                     </div>
                 </div>

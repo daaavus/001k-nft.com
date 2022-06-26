@@ -44,7 +44,6 @@
 .qanda__list-el {
     margin: 0;
     opacity: 0;
-    transition: .3s opacity, .3s visibility;
     list-style: none;
     text-align: start;
     color: rgb(232, 233, 213);
@@ -52,7 +51,6 @@
     font-size: 20px;
     width: 100%;
     line-height: 0px;
-    transition: .15s;
 }
 
 .qanda__list-el_active {

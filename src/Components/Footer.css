@@ -10,13 +10,13 @@
 .footer__logo-container {
     display: flex;
     flex-direction: column;
-    margin: 3% auto 10% 10%;
+    margin: 3% auto auto 10%;
 }
 
 .footer__links-container {
     display: flex;
     flex-direction: row;
-    margin: 3% 10% 10% auto;
+    margin: 3% 10% 5% auto;
 }
 
 .footer__links {

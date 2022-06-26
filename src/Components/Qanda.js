@@ -18,7 +18,7 @@ export default function Qanda() {
                         <p className="qanda__question-text">Когда стартует пресейл и публичный сейл NFT?</p>
                         <div className={answerVisible1 ? "qanda__answer-button" : "qanda__answer-button_active"} onClick={() => {answerVisible1 ? setAnswerVisible1(false) : setAnswerVisible1(true)}}></div>
                     </div>
-                    <li className={answerVisible1 ? 'qanda__list-el_active' : 'qanda__list-el'}>Пресейл стартует 25 мая в 12:00 по Киевскому времени. Публичные продажи начнутся 27 мая в 12:00.</li>
+                    <li className={answerVisible1 ? 'qanda__list-el_active' : 'qanda__list-el'}>Пресейл стартует TBA... в TBA... по Киевскому времени. Публичные продажи начнутся TBA...</li>
                 </div>
                 
                 <div className="qanda__container">
@@ -37,7 +37,7 @@ export default function Qanda() {
                         <div className={answerVisible5 ? "qanda__answer-button" : "qanda__answer-button_active"} onClick={() => {answerVisible5 ? setAnswerVisible5(false) : setAnswerVisible5(true)}}></div>
                     </div>
                     <li className={answerVisible5 ? 'qanda__list-el_active' : 'qanda__list-el'}>
-                        1111 уникальных NFT!
+                        2222 уникальных NFT!
                     </li>
                 </div>
 
@@ -47,7 +47,7 @@ export default function Qanda() {
                         <div className={answerVisible3 ? "qanda__answer-button" : "qanda__answer-button_active"} onClick={() => {answerVisible3 ? setAnswerVisible3(false) : setAnswerVisible3(true)}}></div>
                     </div>
                     <li className={answerVisible3 ? 'qanda__list-el_active' : 'qanda__list-el'}>
-                        Функция раскрытия исполнится как только все 1111 NFT будут сминчены!
+                        Функция раскрытия исполнится как только все 2222 NFT будут сминчены!
                     </li>
                 </div>
 

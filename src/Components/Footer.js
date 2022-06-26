@@ -28,10 +28,10 @@ export default function Footer() {
                 <ul className="footer__links">
                     <h4 className="footer__list-title">Ссылки</h4>
                     <li style={({marginBottom: "8px"})}>
-                        <a className="footer__link" href="#" rel="noopener noreferrer">Opensea</a>
+                        <a target="_blank" className="footer__link" href="https://opensea.io/collection/001k-nft" rel="noopener noreferrer">Opensea</a>
                     </li>
                     <li style={({marginBottom: "8px"})}>
-                        <a className="footer__link" href="#" rel="noopener noreferrer">Discord</a>
+                        <a target="_blank" className="footer__link" href="https://discord.gg/v6Bputsk2Z" rel="noopener noreferrer">Discord</a>
                     </li>
                 </ul>
             </div>

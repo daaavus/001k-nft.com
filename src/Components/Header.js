@@ -17,10 +17,10 @@ export default function Header() {
             </nav>
 
             <div className="header__social-container">
-                <a target="_blank" rel="noreferrer noopener" href="https://discord.gg/">
+                <a target="_blank" rel="noreferrer noopener" href="https://discord.gg/v6Bputsk2Z">
                     <img className="header__social" alt="discord logo" src={discordLogo}></img>
                 </a>
-                <a rel="noreferrer noopener" target="_blank" href="https://opensea.io/collection/001k">
+                <a rel="noreferrer noopener" target="_blank" href="https://opensea.io/collection/001k-nft">
                     <img className="header__social" alt="opensea logo" src={openseaLogo}></img>   
                 </a>
             </div>

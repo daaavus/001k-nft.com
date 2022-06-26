@@ -34,12 +34,12 @@ export default function NavbarMobile() {
                         <a className="navbar-mobile__list-el-text" href="#qanda">Вопросы и ответы</a>
                     </li>
                     <li onClick={() => {!list ? setList(true) : setList(false)}} style={!list ? {display: "none"} : {display: "inline"}} className="navbar-mobile__list-el">
-                        <a rel="noreferrer noopener" target="_blank" href="https://discord.gg/">
+                        <a rel="noreferrer noopener" target="_blank" href="https://discord.gg/v6Bputsk2Z">
                             <img className="header__social" alt="discord logo" src={discordLogo}></img>
                         </a>
                     </li>
                     <li onClick={() => {!list ? setList(true) : setList(false)}} style={!list ? {display: "none"} : {display: "inline"}} className="navbar-mobile__list-el">
-                        <a rel="noreferrer noopener" target="_blank" href="https://opensea.io/collection/001k">
+                        <a rel="noreferrer noopener" target="_blank" href="https://opensea.io/collection/001k-nft">
                             <img className="header__social" alt="opensea logo" src={openseaLogo}></img>   
                         </a>
                     </li>

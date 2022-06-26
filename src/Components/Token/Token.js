@@ -6,8 +6,8 @@ export default function Token() {
             <div className="token__address-container">
                 <p className="token__logo">001K</p>
                 <a className="token__address" target="_blank" rel="noopener noreferrer"
-                    href="https://polygonscan.com/address/0x1FA78Ddb7a7Cd876D164E16772a9143d36BF0bD5">
-                    0x1FA78Ddb7a7Cd876D164E16772a9143d36BF0bD5
+                    href="https://polygonscan.com/address/0xbD1202933cF7092D83465335b92842a2f37c64b5">
+                    0xbD1202933cF7092D83465335b92842a2f37c64b5
                 </a>
                 <svg className="token__network-image" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
@@ -24,7 +24,7 @@ export default function Token() {
                         fill="lightblue">
                     </path>
                 </svg>
-                <p className="token__copy-text" onClick={() =>  navigator.clipboard.writeText("0x1FA78Ddb7a7Cd876D164E16772a9143d36BF0bD5")}>Скопировать</p>
+                <p className="token__copy-text" onClick={() =>  navigator.clipboard.writeText("0xbD1202933cF7092D83465335b92842a2f37c64b5")}>Скопировать</p>
             </div>
             <div className="token__description">
                 <p className="token__description-text">Смарт контракт расположен в сети Polygon</p>

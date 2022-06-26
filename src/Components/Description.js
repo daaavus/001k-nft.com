@@ -1,5 +1,5 @@
 import "./Description.css";
-import nftShowcase from "../images/nft-showcase.mp4";
+import nftShowcase from "../images/showcase.MP4";
 
 export default function Description() {
     return (
@@ -12,8 +12,8 @@ export default function Description() {
                     </video>
                 </div>
                 <p className="description__text">
-                    001K NFT - коллекция Сережи 001K из 1111 уникальных NFT, среди которых затерялись 3 супер редких Себека из драгоценных металлов!
-                    Все NFT в коллекции уникальны и единственны! Мы располагаемся на блокчейне Polygon. 
+                    001K NFT - коллекция Сережи 001K из 2222 уникальных NFT, среди которых затерялись 3 супер редких Себека из драгоценных металлов!
+                    Все NFT в коллекции уникальны! Мы располагаемся на блокчейне Polygon. 
                 </p>
             </div>
         </div>

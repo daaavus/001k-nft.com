@@ -7,6 +7,8 @@ import reportWebVitals from "./reportWebVitals";
 import store from "./redux/store";
 import { Provider } from "react-redux";
 
+const PORT = process.env.PORT || 3000;
+
 ReactDOM.render(
   <Provider store={store}>
     <BrowserRouter>

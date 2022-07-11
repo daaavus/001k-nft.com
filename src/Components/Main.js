@@ -13,7 +13,7 @@ import Token from "./Token/Token";
 
 export default function Main() {
 
-    let countDownDate = new Date(Date.UTC(2022, 6 , 10, 13, 0, 0)).getTime();
+    let countDownDate = new Date(Date.UTC(2022, 6 , 12, 13, 0, 0)).getTime();
     let timeLeft = useRef();
 
     const dispatch = useDispatch();

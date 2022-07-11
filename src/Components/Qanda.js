@@ -18,7 +18,7 @@ export default function Qanda() {
                         <p className="qanda__question-text">Когда стартует пресейл и публичный сейл NFT?</p>
                         <div className={answerVisible1 ? "qanda__answer-button" : "qanda__answer-button_active"} onClick={() => {answerVisible1 ? setAnswerVisible1(false) : setAnswerVisible1(true)}}></div>
                     </div>
-                    <li className={answerVisible1 ? 'qanda__list-el_active' : 'qanda__list-el'}>Пресейл стартует TBA... в TBA... по Киевскому времени. Публичные продажи начнутся TBA...</li>
+                    <li className={answerVisible1 ? 'qanda__list-el_active' : 'qanda__list-el'}>Пресейл стартует 12 июля в 16:00 по Киевскому времени. Публичные продажи начнутся 15 июля в 16:00 по Киевскому времени.</li>
                 </div>
                 
                 <div className="qanda__container">
@@ -27,7 +27,7 @@ export default function Qanda() {
                         <div className={answerVisible2 ? "qanda__answer-button" : "qanda__answer-button_active"} onClick={() => {answerVisible2 ? setAnswerVisible2(false) : setAnswerVisible2(true)}}></div>
                     </div>
                     <li className={answerVisible2 ? 'qanda__list-el_active' : 'qanda__list-el'}>
-                        За 1 NFT установлена цена в 140 MATIC. Комиссия за газ почти нулевая, так как мы на блокчейне Polygon!
+                        За 1 NFT установлена цена в 230 MATIC для закрытого минта и 300 MATIC для публичного минта. Комиссия за газ почти нулевая, так как мы на блокчейне Polygon!
                     </li>
                 </div>
 

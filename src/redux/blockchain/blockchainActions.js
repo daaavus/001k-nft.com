@@ -45,11 +45,11 @@ export const connect = () => {
         });
         //const NetworkData = await SmartContract.networks[networkId];
         // eslint-disable-next-line
-        if (networkId == 137) {
+        if (networkId == 80001) {
           const SmartContractObj = new web3.eth.Contract(
             SmartContract.abi,
             //NetworkData.address
-            "0xbD1202933cF7092D83465335b92842a2f37c64b5"
+            "0x9A620588D9c48b8A62098034B590C69d73EA5dE2"
           );
           dispatch(
             connectSuccess({

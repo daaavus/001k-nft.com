@@ -14,6 +14,7 @@ import Token from "./Token/Token";
 export default function Main() {
 
     let countDownDate = new Date(Date.UTC(2022, 6 , 9, 13, 0, 0)).getTime();
+    let publicDropDate = new Date(Date.UTC(2022, 6 , 15, 13, 0, 0)).getTime();
     let timeLeft = useRef();
 
     const dispatch = useDispatch();
@@ -129,7 +130,7 @@ export default function Main() {
                 <div className='mint-block'>
                     <h1 className="mint-block__title">Заминтите ваш NFT!</h1>
                     <p className="mint-block__span">{`${2222 - data.totalSupply} NFT осталось`}</p>
-                    <p className="mint-block__span">1 NFT стоит 170$ в MATIC</p>
+                    <p className="mint-block__span">1 NFT стоит {(publicDropDate - new Date().getTime()) > 0 ? "130" : "170"}$ в MATIC</p>
                     <p className='mint-block__span_error'>{errFeedback}</p>
                     <p className='mint-block__span_success'>{succFeedback}</p>
                     <div className="mint-block__mint-container">

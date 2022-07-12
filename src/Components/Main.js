@@ -13,7 +13,7 @@ import Token from "./Token/Token";
 
 export default function Main() {
 
-    let countDownDate = new Date(Date.UTC(2022, 6 , 9, 13, 0, 0)).getTime();
+    let countDownDate = new Date(Date.UTC(2022, 6 , 12, 13, 0, 0)).getTime();
     let publicDropDate = new Date(Date.UTC(2022, 6 , 15, 13, 0, 0)).getTime();
     let timeLeft = useRef();
 
@@ -66,8 +66,8 @@ export default function Main() {
 
     const incrementMintAmount = () => {
         let newMintAmount = mintAmount + 1;
-        if (newMintAmount > 10) {
-            newMintAmount = 10;
+        if (newMintAmount > 5) {
+            newMintAmount = 5;
         }
         setMintAmount(newMintAmount);
     };
@@ -77,7 +77,7 @@ export default function Main() {
         blockchain.smartContract.methods.mint(mintAmount).send({
         from: blockchain.account,
         value: blockchain.web3.utils.toWei(
-            (0.01 * mintAmount).toString(),
+            (230 * mintAmount).toString(),
             "ether"
         ),
         }).once("error", (err) => {

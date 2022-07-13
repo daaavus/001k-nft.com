@@ -51,7 +51,14 @@ export default function Roadmap() {
                             rel="noreferrer noopener" 
                             href="https://opensea.io/collection/001k-nft">
                             Opensea
-                        </a>. Теперь произойдет reveal 
+                        </a> и  <a
+                        rel="noreferrer noopener"
+                        style={({color: "orange", textDecoration: "none"})}
+                        target="_blank"
+                        href="https://nftrade.com/">
+                            NFTrade
+                        </a>
+                        Теперь произойдет reveal 
                         ваших NFT и вы узнаете, какая 
                         именно досталась вам!
                     </p>

@@ -24,12 +24,18 @@
     padding: 5px 2px 2px 2px;
 }
 
+.header__icon {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
 .header__social-container {
     display: flex;
     flex-direction: row;
     margin: auto 5% auto auto;
     justify-content: space-between;
-    min-width: 100px;
+    min-width: 140px;
 }
 
 .header__social {

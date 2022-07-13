@@ -33,6 +33,15 @@ export default function Footer() {
                     <li style={({marginBottom: "8px"})}>
                         <a target="_blank" className="footer__link" href="https://discord.gg/v6Bputsk2Z" rel="noopener noreferrer">Discord</a>
                     </li>
+                    <li style={({marginBottom: "8px"})}>
+                        <a
+                        className="footer__link"
+                        rel="noreferrer noopener"
+                        target="_blank"
+                        href="https://nftrade.com/">
+                            NFTrade
+                        </a>
+                    </li>
                 </ul>
             </div>
         </footer>

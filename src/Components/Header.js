@@ -1,6 +1,7 @@
 import "./Header.css";
 import discordLogo from "../images/discord.svg";
 import openseaLogo from "../images/opensea.svg";
+import nftradeLogo from "../images/nftrade.png";
 
 export default function Header() {
 
@@ -22,6 +23,9 @@ export default function Header() {
                 </a>
                 <a rel="noreferrer noopener" target="_blank" href="https://opensea.io/collection/001k-nft">
                     <img className="header__social" alt="opensea logo" src={openseaLogo}></img>   
+                </a>
+                <a rel="noreferrer noopener" target="_blank" href="https://nftrade.com/">
+                    <img className="header__social header__icon" alt="opensea logo" src={nftradeLogo}></img>   
                 </a>
             </div>
         </header>

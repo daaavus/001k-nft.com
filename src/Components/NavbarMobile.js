@@ -3,6 +3,7 @@ import { useState } from "react";
 import openseaLogo from "../images/opensea.svg";
 import discordLogo from "../images/discord.svg";
 import polygonLogo from "../images/polygon-matic-logo.svg";
+import nftradeLogo from "../images/nftrade.png";
 
 export default function NavbarMobile() {
 
@@ -41,6 +42,11 @@ export default function NavbarMobile() {
                     <li onClick={() => {!list ? setList(true) : setList(false)}} style={!list ? {display: "none"} : {display: "inline"}} className="navbar-mobile__list-el">
                         <a rel="noreferrer noopener" target="_blank" href="https://opensea.io/collection/001k-nft">
                             <img className="header__social" alt="opensea logo" src={openseaLogo}></img>   
+                        </a>
+                    </li>
+                    <li onClick={() => {!list ? setList(true) : setList(false)}} style={!list ? {display: "none"} : {display: "inline"}} className="navbar-mobile__list-el">
+                        <a rel="noreferrer noopener" target="_blank" href="https://nftrade.com/">
+                            <img className="header__social header__icon" alt="opensea logo" src={nftradeLogo}></img>   
                         </a>
                     </li>
                 </ul>

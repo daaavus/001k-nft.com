@@ -45,7 +45,7 @@ export const connect = () => {
         });
         //const NetworkData = await SmartContract.networks[networkId];
         // eslint-disable-next-line
-        if (networkId == 1) {
+        if (networkId == 137) {
           const SmartContractObj = new web3.eth.Contract(
             SmartContract.abi,
             //NetworkData.address

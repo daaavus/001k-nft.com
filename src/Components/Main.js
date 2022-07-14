@@ -77,7 +77,7 @@ export default function Main() {
         blockchain.smartContract.methods.mint(mintAmount).send({
         from: blockchain.account,
         value: blockchain.web3.utils.toWei(
-            (230 * mintAmount).toString(),
+            (192 * mintAmount).toString(),
             "ether"
         ),
         }).once("error", (err) => {

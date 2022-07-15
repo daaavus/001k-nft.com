@@ -77,7 +77,7 @@ export default function Main() {
         blockchain.smartContract.methods.mint(mintAmount).send({
         from: blockchain.account,
         value: blockchain.web3.utils.toWei(
-            (192 * mintAmount).toString(),
+            (190 * mintAmount).toString(),
             "ether"
         ),
         }).once("error", (err) => {
@@ -130,7 +130,7 @@ export default function Main() {
                 <div className='mint-block'>
                     <h1 className="mint-block__title">Заминтите ваш NFT!</h1>
                     <p className="mint-block__span">{`${2222 - data.totalSupply} NFT осталось`}</p>
-                    <p className="mint-block__span">1 NFT стоит {(publicDropDate - new Date().getTime()) > 0 ? "230" : "300"} MATIC</p>
+                    <p className="mint-block__span">1 NFT стоит {(publicDropDate - new Date().getTime()) > 0 ? "190" : "220"} MATIC</p>
                     <p className='mint-block__span_error'>{errFeedback}</p>
                     <p className='mint-block__span_success'>{succFeedback}</p>
                     <div className="mint-block__mint-container">

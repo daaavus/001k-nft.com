@@ -38,7 +38,7 @@ export default function Footer() {
                         className="footer__link"
                         rel="noreferrer noopener"
                         target="_blank"
-                        href="https://nftrade.com/">
+                        href="https://nftrade.com/assets/polygon/0xbd1202933cf7092d83465335b92842a2f37c64b5">
                             NFTrade
                         </a>
                     </li>

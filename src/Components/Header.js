@@ -24,7 +24,7 @@ export default function Header() {
                 <a rel="noreferrer noopener" target="_blank" href="https://opensea.io/collection/001k-nft">
                     <img className="header__social" alt="opensea logo" src={openseaLogo}></img>   
                 </a>
-                <a rel="noreferrer noopener" target="_blank" href="https://nftrade.com/">
+                <a rel="noreferrer noopener" target="_blank" href="https://nftrade.com/assets/polygon/0xbd1202933cf7092d83465335b92842a2f37c64b5">
                     <img className="header__social header__icon" alt="opensea logo" src={nftradeLogo}></img>   
                 </a>
             </div>

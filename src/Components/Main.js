@@ -14,7 +14,7 @@ import Token from "./Token/Token";
 export default function Main() {
 
     let countDownDate = new Date(Date.UTC(2022, 6 , 12, 12, 0, 0)).getTime();
-    let publicDropDate = new Date(Date.UTC(2022, 6 , 15, 13, 0, 0)).getTime();
+    let publicDropDate = new Date(Date.UTC(2022, 6 , 15, 12, 0, 0)).getTime();
     let timeLeft = useRef();
 
     const dispatch = useDispatch();
@@ -77,7 +77,7 @@ export default function Main() {
         blockchain.smartContract.methods.mint(mintAmount).send({
         from: blockchain.account,
         value: blockchain.web3.utils.toWei(
-            (190 * mintAmount).toString(),
+            (215 * mintAmount).toString(),
             "ether"
         ),
         }).once("error", (err) => {
@@ -130,7 +130,7 @@ export default function Main() {
                 <div className='mint-block'>
                     <h1 className="mint-block__title">Заминтите ваш NFT!</h1>
                     <p className="mint-block__span">{`${2222 - data.totalSupply} NFT осталось`}</p>
-                    <p className="mint-block__span">1 NFT стоит {(publicDropDate - new Date().getTime()) > 0 ? "190" : "220"} MATIC</p>
+                    <p className="mint-block__span">1 NFT стоит {(publicDropDate - new Date().getTime()) > 0 ? "190" : "215"} MATIC</p>
                     <p className='mint-block__span_error'>{errFeedback}</p>
                     <p className='mint-block__span_success'>{succFeedback}</p>
                     <div className="mint-block__mint-container">

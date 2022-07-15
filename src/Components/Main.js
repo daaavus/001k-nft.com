@@ -66,8 +66,8 @@ export default function Main() {
 
     const incrementMintAmount = () => {
         let newMintAmount = mintAmount + 1;
-        if (newMintAmount > 5) {
-            newMintAmount = 5;
+        if (newMintAmount > 15) {
+            newMintAmount = 15;
         }
         setMintAmount(newMintAmount);
     };

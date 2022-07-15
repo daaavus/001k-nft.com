@@ -45,7 +45,7 @@ export default function NavbarMobile() {
                         </a>
                     </li>
                     <li onClick={() => {!list ? setList(true) : setList(false)}} style={!list ? {display: "none"} : {display: "inline"}} className="navbar-mobile__list-el">
-                        <a rel="noreferrer noopener" target="_blank" href="https://nftrade.com/">
+                        <a rel="noreferrer noopener" target="_blank" href="https://nftrade.com/assets/polygon/0xbd1202933cf7092d83465335b92842a2f37c64b5">
                             <img className="header__social header__icon" alt="opensea logo" src={nftradeLogo}></img>   
                         </a>
                     </li>

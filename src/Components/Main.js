@@ -72,6 +72,7 @@ export default function Main() {
         setMintAmount(newMintAmount);
     };
 
+
     const claimNFTs = (mintAmount) => {
         setClaimingNft(true);
         blockchain.smartContract.methods.mint(mintAmount).send({
